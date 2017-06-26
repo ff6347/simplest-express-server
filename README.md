@@ -31,7 +31,7 @@ Now you can add your code in the index.js file to control things in the backend[
 
 <!-- links -->
 
-[download]: https://github.com/FH-Potsdam/controlling-hue/archive/master.zip
+[download]: https://github.com/fabianmoronzirfas/simplest-express-server/archive/master.zip
 [host]: http://localhost:3000
 [twit]: https://github.com/ttezel/twit
 [j5]: https://github.com/rwaldron/johnny-five
