@@ -1,0 +1,15 @@
+{
+  "name": "simplest-express-server",
+  "version": "0.1.0",
+  "description": "such a simple express server for static files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  }
+}
