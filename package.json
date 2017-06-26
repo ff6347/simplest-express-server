@@ -11,5 +11,19 @@
   "dependencies": {
     "express": "^4.15.3",
     "socket.io": "^2.0.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianmoronzirfas/simplest-express-server.git"
+  },
+  "keywords": [
+    "express",
+    "teaching",
+    "prototyping"
+  ],
+  "bugs": {
+    "url": "https://github.com/fabianmoronzirfas/simplest-express-server/issues"
+  },
+  "homepage": "https://github.com/fabianmoronzirfas/simplest-express-server#readme"
 }
