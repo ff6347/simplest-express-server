@@ -69,8 +69,13 @@
   pre {
     border-left: 2px solid #69c;
   }
-
+  #target{
+    text-align: center;
+    font-size: 10em;
+  }
   .centered {
+    text-align: center;
+    width:20em;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -87,6 +92,11 @@
   <!-- <script type="text/javascript" src="main.js"></script> -->
   <script>
   /* global io, document */
+  // these are changes made to the frontend
+  function changeit (val){
+    let targetElement = document.getElementById('target');
+    targetElement.innerHTML = val;
+  }
   document.addEventListener('DOMContentLoaded', function() {
     console.log('DOMContent is loaded');
     var socket = new io();
@@ -101,18 +111,22 @@
     button1.onclick = function() {
       socket.send('one');
       console.log('your clicked button one in frontend');
+      changeit('one');
     };
     button2.onclick = function() {
       socket.send('two');
       console.log('your clicked button two in frontend');
+      changeit('two');
     };
     button3.onclick = function() {
       socket.send('three');
       console.log('your clicked button three in frontend');
+      changeit('three');
     };
     button4.onclick = function() {
       socket.send('four');
       console.log('your clicked button four in frontend');
+      changeit('four');
     };
   });
   </script>
@@ -120,10 +134,11 @@
 
 <body>
   <div class="centered">
-    <button id="button1" name="button1">state 1</button>
-    <button id="button2" name="button2">state 2</button>
-    <button id="button3" name="button3">state 3</button>
-    <button id="button4" name="button4">state 4</button>
+  <div id="target">zero</div>
+    <button id="button1" name="button1">Add 1</button>
+    <button id="button2" name="button2">Add 2</button>
+    <button id="button3" name="button3">Add 3</button>
+    <button id="button4" name="button4">Add 4</button>
   </div>
 </body>
 
